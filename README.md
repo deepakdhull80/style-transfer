@@ -19,6 +19,11 @@ python run.py -ci content.jpg -si style.jpg
 
 ## Some results
 
+#### content and style
+![alt](https://github.com/deepakdhull80/style-transfer/blob/main/images/content.jpg)
+![alt](https://github.com/deepakdhull80/style-transfer/blob/main/images/style.jpg)
+#### Result
+![alt ](https://github.com/deepakdhull80/style-transfer/blob/main/images/result.jpg)
 
 
 ### Learning
