@@ -1,9 +1,7 @@
 import os
 import argparse
-from datetime import datetime
 import uuid
 
-from tqdm import tqdm
 import torch
 from torchvision import transforms
 from PIL import Image
@@ -12,13 +10,12 @@ from model.neural_style import StyleTransfer
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="[hint] if image_size:[default=512] not able to load in cuda, reduce image_size or device=cpu")
     parser.add_argument("-ci","--content", help="readable content image in local path", required=True)
     parser.add_argument("-si","--style", help="readable style image in local path",required=True)
     parser.add_argument("-d","--device", help="default device is cpu", default="cpu")
     parser.add_argument("-it","--iteration", help="default iteration is 200", default=200)
     parser.add_argument("--image_size", help="image_size of resultant image",default=512)
-    parser.add_help("[hint] if image_size:[default=512] not able to load in cuda, reduce image_size or device=cpu")
     args = parser.parse_args()
     
     SAVE_PATH = "results"
@@ -76,7 +73,7 @@ if __name__ == "__main__":
         i[0]+=1
         return loss
     
-    while i[0]< int(args.iterations)+1:
+    while i[0]< int(args.iteration)+1:
         optimizer.step(r)
     
     transforms.ToPILImage()(target_image[0]).save(f"{SAVE_PATH}/st_image_[{i[0]+1}].jpg")
