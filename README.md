@@ -20,10 +20,12 @@ python run.py -ci content.jpg -si style.jpg
 ## Some results
 
 #### content and style
-![alt](https://github.com/deepakdhull80/style-transfer/blob/main/images/content.jpg)
-![alt](https://github.com/deepakdhull80/style-transfer/blob/main/images/style.jpg)
-#### Result
-![alt ](https://github.com/deepakdhull80/style-transfer/blob/main/images/result.jpg)
+<p align="center">
+  <img src="https://github.com/deepakdhull80/style-transfer/blob/main/images/content.jpg" width="256" height="256" title="content image">
+  <img src="https://github.com/deepakdhull80/style-transfer/blob/main/images/style.jpg" width="256" height="256" title="style image">
+  <br><br>
+  <img src="https://github.com/deepakdhull80/style-transfer/blob/main/images/result.jpg" width="340" height="340" title="result image">
+</p>
 
 
 ### Learning
