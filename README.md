@@ -30,6 +30,6 @@ python run.py -ci content.jpg -si style.jpg
 
 
 ### Learning
-1. LBFGS optimizer
-This method of optimization, where we take into account the objective function’s second order behavior in addition to its first order behavior, is known as Newton’s method.
+1. LBFGS optimizer [<a href="https://towardsdatascience.com/bfgs-in-a-nutshell-an-introduction-to-quasi-newton-methods-21b0e13ee504">ref</a>]
+This method of optimization, where we take into account the objective function’s second order behavior in addition to its first order behavior, is known as Newton’s method. for more detail use link.
 
