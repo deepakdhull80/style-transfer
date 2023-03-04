@@ -1,5 +1,6 @@
 # style-transfer
 Neural style transfer - A Neural Algorithm of Artistic Style
+[<a href="https://arxiv.org/pdf/1508.06576.pdf" >Paper</a>]
 
 ## Setup:
 ```bash
