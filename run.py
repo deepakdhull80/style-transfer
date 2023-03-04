@@ -76,7 +76,7 @@ if __name__ == "__main__":
         i[0]+=1
         return loss
     
-    for _ in tqdm(range(int(args.iteration)),total=int(args.iteration)):
+    while i[0]< int(args.iterations)+1:
         optimizer.step(r)
     
     transforms.ToPILImage()(target_image[0]).save(f"{SAVE_PATH}/st_image_[{i[0]+1}].jpg")
